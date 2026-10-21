@@ -16,6 +16,7 @@ function makeTwoFactorService(): TwoFactorService {
   return { lockoutStore: null };
 }
 
+
 /** Minimal Redis client stub – mirrors the shape required by RedisLockoutStore. */
 function makeRedisClient() {
   const data: Record<string, string> = {};
